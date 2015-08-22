@@ -9,7 +9,8 @@ public class DisplayChoices {
 			
 			System.out.println("No star preference and hotel preference provided");
 			DisplayDefaultChoices disp = new DisplayDefaultChoices();
-			disp.DispDefChoices(rewardee, weekday);
+			disp.SetDefChoices(rewardee, weekday);
+			disp.DispDefChoices();
 			
 		} else if (starPref.equals("5") | hotelPref.equals("Del")){
 			
@@ -31,7 +32,8 @@ public class DisplayChoices {
 			System.out.println("Sorry we don't have hotels available with preferences provided");
 			System.out.println("Following are the suggestions we have for you:");
 			DisplayDefaultChoices disp = new DisplayDefaultChoices();
-			disp.DispDefChoices(rewardee, weekday);
+			disp.SetDefChoices(rewardee, weekday);
+			disp.DispDefChoices();
 			
 		}
 	}
