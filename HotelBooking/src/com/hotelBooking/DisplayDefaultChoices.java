@@ -68,7 +68,61 @@ public class DisplayDefaultChoices {
 	
 	
 	//Method to display individual hotel results
-	void DisplayDelta(){
+	void DisplayDelta(boolean member, boolean weekday){
+		if (member == true){
+			if (weekday == true){
+				setDeltaPrice(1 * 210);
+			}else {
+				setDeltaPrice(1 * 230);
+			}
+		}else if (member == false){
+			if (weekday == true){
+				setDeltaPrice(1 * 250);
+			}else {
+				setDeltaPrice(1 * 290);
+			}
+		}
+		
+		System.out.println("Total cost of stay: Rs." + deltaPrice);
+		
+	}
+	
+	
+	void DisplayRitz(boolean member, boolean weekday){
+		if (member == true){
+			if (weekday == true){
+				setRitzPrice(1 * 120);
+			}else {
+				setRitzPrice(1 * 180);
+			}
+		}else if (member == false){
+			if (weekday == true){
+				setRitzPrice(1 * 195);
+			}else {
+				setRitzPrice(1 * 250);
+			}
+		}
+		System.out.println("Total cost of stay: Rs." + ritzPrice);
+		
+	}
+	
+	
+	
+	void DisplayRenais(boolean member, boolean weekday){
+		if (member == true){
+			if (weekday == true){
+				setRenaisPrice(1 * 90);
+			}else {
+				setRenaisPrice(1 * 95);
+			}
+		}else if (member == false){
+			if (weekday == true){
+				setRenaisPrice(1 * 100);
+			}else {
+				setRenaisPrice(1 * 120);
+			}
+		}
+		System.out.println("Total cost of stay: Rs." + renaisPrice);
 		
 	}
 	
